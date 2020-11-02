@@ -1,0 +1,86 @@
+.topnav {
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: stretch;
+}
+
+.logosignup {
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: stretch;
+}
+
+.logologin {
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: stretch;
+}
+
+.topnav a {
+  float: left;
+  color: #b8860b;
+  text-align: center;
+  margin: 5px;
+  font-size: 8px;
+}
+
+.alreadymember {
+  position: absolute;
+  bottom: 500px;
+}
+
+.logo {
+  background-size: contain;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  margin-right: 0px;
+}
+.logo img {
+  margin-left: 100%;
+  margin-right: 0%;
+}
+
+.title {
+  font-size: 50px;
+  position: absolute;
+  top: 100px;
+}
+
+.homepage-image {
+  background: center
+    url("https://images5.alphacoders.com/403/thumb-1920-403408.jpg");
+  background-size: contain;
+  width: 100%;
+  height: 200px;
+}
+
+.paragraph {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.contactus {
+  font-size: 10px;
+}
