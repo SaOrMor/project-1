@@ -15,16 +15,26 @@ handleEmailInput = (event) => {
     const emailInput = event.target;
     const email = emailInput.value;
 
-   // console.log(email);
+   validator.validateValidEmail(email);
+   validator.validateUniqueEmail(email);
+
+   this.setErrorMessages();
 }
 
 // handle the password input
 
 handlePasswordInput = (event) => {
     const passwordInput = event.target;
+    const repeatPasswordInput = this.repeatPasswordInput;
+    
     const password = passwordInput.value;
+    const repeatPassword = repeatPasswordInput.value;
 
-   // console.log(password);
+
+   validator.validatePassword(password);
+   validator.validateRepeatPassoword(password, validateRepeatPassoword);
+
+   this.setErrorMessages();
 }
 
 // password confirmation
@@ -32,10 +42,26 @@ handleReapPasswordInput = (event) => {
     const repPasswordInput = event.target;
     const repPassword = repPasswordInput.value;
 
-   // console.log(repPassword);
+    validator.validatePassword(password);
+    validator.validateRepeatPassoword(password);
+
+    this.setErrorMessages();
 }
 
-// handle save data when user click and submit
+setErrorMessages = () => {
+
+    this.errorsWrapper.innerHTML = "";
+
+    const errorsObj = validator.getErrors();
+    console.log(errorsObj);
+    const errorsStringsArr = Object.values(  errorsObj );
+    errorsStringsArr.forEach( (str)  ) => {
+        const p = document.createElement('p');
+        p.textContent = str;
+
+        this.errorWrapper.appendChild(p);
+    })
+};
 
 saveData = (event) => {
 
