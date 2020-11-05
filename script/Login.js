@@ -37,7 +37,7 @@ class Login {
     if (!user) {
       p.textContent = "Email or password are incorrect!";
     } else {
-      p.textContent = `Hello ${user.name}!`;
+      p.textContent = `Hello ${user.email}!`;
       p.classList.add("correct-message");
       // Redirect to the Homepage
       this.redirect();
@@ -52,3 +52,7 @@ class Login {
     // setTimeout( () => location.assign("dashboard.html"), 2000)
   };
 }
+
+const login = new Login();
+
+login.loginButton.addEventListener("click", login.handleSubmit);

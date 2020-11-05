@@ -5,7 +5,7 @@ class Signup {
     //store all of the input elements
     this.emailInput = document.querySelector("#email");
     this.passwordInput = document.querySelector("#password");
-    this.repeatPasswordinput = document.querySelector("#repeatPassword");
+    this.repeatPasswordInput = document.querySelector("#repeatPassword");
     this.buttonInput = document.querySelector("#signup-button");
     this.errorWrapper = document.querySelector(".message-container");
   }
@@ -25,7 +25,7 @@ class Signup {
   handlePasswordInput = (event) => {
     const passwordInput = event.target;
     const repeatPasswordInput = this.repeatPasswordInput;
-    console.log(repeatPasswordInput);
+    console.log(this.repeatPasswordInput);
     const password = passwordInput.value;
     const repeatPassword = repeatPasswordInput.value;
 
@@ -91,7 +91,7 @@ class Signup {
   addListeners = () => {
     this.emailInput.addEventListener("input", this.handleEmailInput);
     this.passwordInput.addEventListener("input", this.handlePasswordInput);
-    this.repeatPasswordinput.addEventListener(
+    this.repeatPasswordInput.addEventListener(
       "input",
       this.handleReapatPasswordInput
     );
