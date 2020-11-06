@@ -13,10 +13,10 @@ function getHouses() {
         div.innerHTML = `
         <a href= "https://awoiaf.westeros.org/index.php/${data.name}"
         <p>Name: ${data.name}</p> </a>
-        <p>Region: ${data.region}</p>
-        <p>Coat of Arms: ${data.coatOfArms}</p>
-        <p>Words: ${data.words}</p>
-        <p>titles: ${data.titles}</p>
+        <p class= "alert alert-dark">Region: ${data.region}</p>
+        <p class= "alert alert-danger">Coat of Arms: ${data.coatOfArms}</p>
+        <p class= "alert alert-warning">Words: ${data.words}</p>
+        <p class= "alert alert-success">titles: ${data.titles}</p>
         `;
         selectHouses.appendChild(div);
       } else {
@@ -44,11 +44,11 @@ function getBooks() {
       div.innerHTML = `
       <a href="https://awoiaf.westeros.org/index.php/${data.name}"
  <p> Title: ${data.name}</p> </a>
- <p> Author: ${data.authors}</p>
- <p> Pages: ${data.numberOfPages}</p>
- <p> Publisher: ${data.publisher}</p>
- <p> Country: ${data.country}</p>
- <p> Release date: ${data.released}</p>
+ <p class="alert alert-danger"> Author: ${data.authors}</p>
+ <p class= "alert alert-dark"> Pages: ${data.numberOfPages}</p>
+ <p class= "alert alert-warning"> Publisher: ${data.publisher}</p>
+ <p class= "alert alert-dark"> Country: ${data.country}</p>
+ <p class= "alert alert-success"> Release date: ${data.released}</p>
  `;
       selectBooks.appendChild(div);
     })
