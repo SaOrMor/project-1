@@ -33,6 +33,7 @@ function getHouses() {
 
 function getBooks() {
   const selectBooks = document.querySelector(".Books-list");
+  selectBooks.innerHTML = " ";
   const randomBook = Math.floor(Math.random() * 13) + 1;
   fetch(`https://www.anapioficeandfire.com/api/books/${randomBook}`)
     .then((response) => {

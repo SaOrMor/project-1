@@ -4,47 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css" />
-<title>ExploreGot</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+      </style>
 </head>
 <body>
-<header>
-    <nav class="topnav"></nav>>
-            <a class="active" href="./homepage.html">Home</a>
-            <!-- <a href="#houses">Houses</a> -->
-            <a href="./characters">Characters</a>
-            <!-- <a href="#faq">Faq</a> -->
-            <div right-bar>
-            <a href="./login.html">Log-In</a>
-            <a href="./signup.html">Sign-In</a>
-            </div>
-            <div>
-            <a href="./homepage.html">
-            <img src="./Images/logo.png" alt="logo">
-            </a>
-            </div>
-    </nav>
-    <section class="header-section">
-<h1>ExploreGot</h1>
-    </section>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="homepage.html" class="navbar-brand">
+        <img class="logo" src="./Images/logoTre.png" alt="logo"></a>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="homepage.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="characters.html">Characters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Log-In</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="signup.html">Sign-Up</a>
+              </li>
+          </ul>
+        </nav>
 
-<button onclick="getHouses()" type='button'>Get House</button>
+
+        <header>
+
+    
+    <section class="header-section">
+      <h2>Houses and Books</h2>
+    </section>
+<div>
+<img class="characters-image" src="./Images/got-houses.jpg">
+<button class="buttonTwo btn btn-dark" onclick="getHouses()" type='button'>Get House</button>
 
 <section class= "Houses-list"></section>
+</div>
+<div>
+<img class="characters-image" src="./Images/got-book.JPG">
+<button class="buttonTwo btn btn-dark" onclick="getBooks()" type='button'>Get Book</button>
 
-<button onclick="getBooks()" type='button'>Get Book</button>
+<section class= "Books-list">
+</div>
 
-<section class= "Books-list"></section>
+</section>
 
 
     </header>
     <footer>
-        <a class= "whoweare" href="./contactus.html"> Who we are</a>
+        <div class="alert alert-dark" role="alert">
+        <a class="alert-link" href="./contactus.html"> Who we are</a></div>
     <!--  <a href="what We Do">What we do.</a>
         <a href="Contact us">Contact us</a> -->
         </footer>
         
         <div>
-            <script src= "script/housesandBooks.js"></script>
+            <script src= "./script/housesandBooks.js"></script>
             <script src="./script/Login.js"></script>
             <script src="./script/Database.js"></script>
             <script src="./script/user.js"></script>
